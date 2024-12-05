@@ -1,21 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Math Auto Key Redeem</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sirius Cheats</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@1.14.2/dist/full.css" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.9/dist/scrollreveal.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/js/fontawesome.min.js"></script>
+  <style>
+    body {
+      background-color: #1a1d23;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden; /* Prevent horizontal scrollbar */
+    }
+    .navbar {
+      background-color: #1a1d23;
+      z-index: 100; /* Ensure navbar is always on top */
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+    .navbar a {
+      color: #fff;
+    }
+    .navbar a:hover {
+      color: #ccc;
+    }
+    .card {
+      background-color: #1a1d23;
+      border: 1px solid #333;
+      border-radius: 10px;
+      padding: 20px;
+      transition: transform 0.3s ease-in-out;
+      perspective: 1000px; /* Enable 3D perspective */
+    }
+    .card:hover {
+      transform: translateY(-5px) rotateY(5deg); /* Apply rotation on hover */
+      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    }
+    .btn {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+    }
+    .btn:hover {
+      background-color: #444;
+    }
+    .hero {
+      padding-top: 80px; /* Adjust for navbar height */
+    }
+  </style>
 </head>
 <body>
-    <h1>Redeem Your Product Key</h1>
-    <form id="redeem-form">
-        <label for="product-key">Product Key:</label>
-        <input type="text" id="product-key" name="product-key" required>
-        <button type="submit">Redeem</button>
-    </form>
-    
-    <div id="install-section"></div>
-    
-    <script src="script.js"></script>
+  <nav class="navbar">
+    <div class="container mx-auto">
+      <div class="flex justify-between items-center">
+        <a href="#" class="text-3xl font-bold">Sirius Cheats</a>
+        <ul class="flex items-center space-x-4">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="container mx-auto p-4 pt-6 mt-10">
+      <h1 class="text-6xl font-bold text-white">Get Ahead of the Curve with Sirius Cheats</h1>
+      <p class="text-2xl text-white mt-4">Unlock exclusive teacher accounts for Campus Middle School's math curriculum</p>
+      <a href="YOUR_LINK_HERE" class="btn mt-8">Get Started</a>
+    </div>
+  </section>
+  <section class="features">
+    <div class="container mx-auto p-4 pt-6 mt-10">
+      <h2 class="text-4xl font-bold text-white">Features</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+        <div class="card">
+          <h3 class="text-2xl font-bold text-white">Exclusive Content</h3>
+          <p class="text-white mt-4">Get access to exclusive teacher accounts for Campus Middle School's math curriculum</p>
+        </div>
+        <div class="card">
+          <h3 class="text-2xl font-bold text-white">Personalized Support</h3>
+          <p class="text-white mt-4">Get personalized support from our team of experts</p>
+        </div>
+        <div class="card">
+          <h3 class="text-2xl font-bold text-white">Secure and Reliable</h3>
+          <p class="text-white mt-4">Our system is secure and reliable, ensuring that your information is safe</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    ScrollReveal().reveal('.hero', {
+      origin: 'top',
+      distance: '100px',
+      duration: 1000,
+      delay: 0,
+      rotate: {
+        x: 0,
+        y: 0,
+        z: 0,
+      },
+      opacity: 0,
+      scale: 1,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    });
+    ScrollReveal().reveal('.features', {
+      origin: 'bottom',
+      distance: '100px',
+      duration: 1000,
+      delay: 500,
+      rotate: {
+        x: 0,
+        y: 0,
+        z: 0,
+      },
+      opacity: 0,
+      scale: 1,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    });
+    ScrollReveal().reveal('.card', {
+      origin: 'bottom',
+      distance: '100px',
+      duration: 1000,
+      delay: 1000,
+      rotate: {
+        x: 0,
+        y: 0,
+        z: 0,
+      },
+      opacity: 0,
+      scale: 1,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    });
+  </script>
 </body>
 </html>
